@@ -34,7 +34,7 @@ export default function HeroSection() {
                                 </p>
 
                                 <h1 className="mt-8 text-4xl font-semibold xl:[line-height:1.125]">
-                                    Hi, I am suudi <br /> A Full Stack
+                                    Hi, I am Suudi <br /> A Full Stack
                                     Developer.
                                 </h1>
                                 <p className="max-w-lg mx-auto mt-8 text-lg text-wrap">

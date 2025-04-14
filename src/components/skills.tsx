@@ -44,6 +44,10 @@ const skills = [
         name: "Nest.Js",
     },
     {
+        icon: "/postgres.png",
+        name: "PostgresSQL",
+    },
+    {
         icon: "/docker.png",
         name: "Docker",
     },

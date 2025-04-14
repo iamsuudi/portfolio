@@ -7,7 +7,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
+import { IconHandClick, IconHome, IconLayoutNavbarCollapse } from "@tabler/icons-react";
 import {
     AnimatePresence,
     MotionValue,
@@ -18,6 +18,7 @@ import {
 } from "motion/react";
 import Link from "next/link";
 import { useRef, useState } from "react";
+import { Button } from "./button";
 
 export const FloatingDock = ({
     items,
@@ -44,6 +45,7 @@ const FloatingDockMobile = ({
     className?: string;
 }) => {
     const [open, setOpen] = useState(false);
+
     return (
         <div className={cn("relative block md:hidden", className)}>
             <AnimatePresence>
@@ -83,12 +85,13 @@ const FloatingDockMobile = ({
                     </motion.div>
                 )}
             </AnimatePresence>
-            <button
+            <Button
+                size={"icon"}
                 onClick={() => setOpen(!open)}
-                className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 dark:bg-neutral-800"
+                className="flex items-center justify-center w-10 h-10 rounded-full animate-pulse"
             >
-                <IconLayoutNavbarCollapse className="w-5 h-5 text-neutral-500 dark:text-neutral-400" />
-            </button>
+                <IconHandClick className="size-5" />
+            </Button>
         </div>
     );
 };
@@ -131,13 +134,20 @@ function IconContainer({
     const ref = useRef<HTMLDivElement>(null);
 
     const distance = useTransform(mouseX, (val) => {
-        const bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
+        const bounds = ref.current?.getBoundingClientRect() ?? {
+            x: 0,
+            width: 0,
+        };
 
         return val - bounds.x - bounds.width / 2;
     });
 
     const widthTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
-    const heightTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
+    const heightTransform = useTransform(
+        distance,
+        [-150, 0, 150],
+        [40, 80, 40]
+    );
 
     const widthTransformIcon = useTransform(
         distance,

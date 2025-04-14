@@ -66,7 +66,7 @@ export function Socials() {
 
     return (
         <div className="fixed bottom-0 z-50 flex items-center justify-center w-screen h-20">
-            <div className="flex justify-end w-full max-w-xl h-fit md:justify-center">
+            <div className="flex justify-end w-full max-w-xl px-6 h-fit md:justify-center">
                 <FloatingDock
                     // mobileClassName="translate-y-20"
                     items={links}

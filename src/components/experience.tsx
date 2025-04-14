@@ -24,7 +24,7 @@ export function ExperienceTimeline() {
                             <h3 className="mb-1 font-bold">{item.company}</h3>
                             <div className="flex items-center text-xs font-semibold text-muted-foreground">
                                 <p>{item.time.start}</p>
-                                <span className="text-sm font-black scale-125">
+                                <span className="mb-1 text-sm font-black scale-125">
                                     &#xa0;&#xa0;&#x279B;&#xa0;&#xa0;
                                 </span>
                                 {item.time.end === "Present" ? (
