@@ -1,29 +1,41 @@
 import React from "react";
 import Image from "next/image";
+import { Dot } from "lucide-react";
 
 export function ExperienceTimeline() {
     return (
-        <div className="w-full max-w-xl p-8 mx-auto sm:p-16">
-            <h2 className="mb-20 text-4xl font-bold text-center">Experience</h2>
+        <div className="w-full max-w-xl p-8 mx-auto sm:px-0 sm:py-16">
+            <h2 className="mb-10 text-xl font-bold">Experience</h2>
 
-            <ol className="border-s border-s-foreground/40">
+            <ol className="ml-6 border-s border-s-foreground/40">
                 {experiences.map((item, index) => (
                     <li key={index} className="relative pl-4 mb-10 ms-7">
                         <span className="absolute flex items-center justify-center w-10 h-10 rounded-full bg-foreground top-1 -left-12 outline-offset-2 outline-foreground outline-2">
                             <Image
                                 src={item.logo}
-                                width={32}
-                                height={32}
+                                width={1080}
+                                height={1080}
                                 alt="Company Logo"
-                                className="w-full h-full rounded-full"
+                                className="w-8 h-8 rounded-full"
                             />
                         </span>
 
                         <div className="flex items-center justify-between">
-                            <h3 className="mb-1 font-black">{item.company}</h3>
-                            <span className="text-xs font-semibold text-muted-foreground">
-                                {item.time.start} - {item.time.end}
-                            </span>
+                            <h3 className="mb-1 font-bold">{item.company}</h3>
+                            <div className="flex items-center text-xs font-semibold text-muted-foreground">
+                                <p>{item.time.start}</p>
+                                <span className="text-sm font-black scale-125">
+                                    &#xa0;&#xa0;&#x279B;&#xa0;&#xa0;
+                                </span>
+                                {item.time.end === "Present" ? (
+                                    <p className="flex items-center gap-1">
+                                            <Dot className="text-green-400 size-3 scale-[3] animate-pulse" />
+                                        <span>{item.time.end}</span>
+                                    </p>
+                                ) : (
+                                    <p>{item.time.end}</p>
+                                )}
+                            </div>
                         </div>
 
                         <p className="block mb-1 text-sm font-semibold leading-none">

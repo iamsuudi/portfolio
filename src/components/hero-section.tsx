@@ -16,7 +16,7 @@ export default function HeroSection() {
         <>
             <main className="overflow-hidden">
                 <section className="relative">
-                    <div className="relative pt-24 lg:pt-28">
+                    <div className="relative py-24 lg:py-28">
                         <div className="px-6 mx-auto max-w-7xl md:px-12">
                             <div className="text-center sm:mx-auto sm:w-10/12 lg:mr-auto lg:mt-0 lg:w-4/5">
                                 <Link
