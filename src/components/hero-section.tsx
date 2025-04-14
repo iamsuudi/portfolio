@@ -47,7 +47,7 @@ export default function HeroSection() {
                                         <Link href="#call-to-action">
                                             <Rocket className="relative size-4" />
                                             <span className="text-nowrap">
-                                                Let's Start Building
+                                                Let&apos;s Start Building
                                             </span>
                                         </Link>
                                     </Button>
