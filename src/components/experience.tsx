@@ -10,7 +10,7 @@ export function ExperienceTimeline() {
             <ol className="ml-6 border-s border-s-foreground/40">
                 {experiences.map((item, index) => (
                     <li key={index} className="relative pl-4 mb-10 ms-7">
-                        <span className="absolute flex items-center justify-center w-10 h-10 rounded-full bg-foreground top-1 -left-12 outline-offset-2 outline-foreground outline-2">
+                        <span className="absolute flex items-center justify-center w-10 h-10 rounded-full bg-foreground -left-12">
                             <Image
                                 src={item.logo}
                                 width={1080}
@@ -29,7 +29,7 @@ export function ExperienceTimeline() {
                                 </span>
                                 {item.time.end === "Present" ? (
                                     <p className="flex items-center gap-1">
-                                            <Dot className="text-green-400 size-3 scale-[3] animate-pulse" />
+                                        <Dot className="text-green-400 size-3 scale-[3] animate-pulse" />
                                         <span>{item.time.end}</span>
                                     </p>
                                 ) : (
