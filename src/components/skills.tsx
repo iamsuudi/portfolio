@@ -4,7 +4,7 @@ import Image from "next/image";
 export function Skills() {
     return (
         <div className="w-full max-w-xl p-8 mx-auto sm:px-0 sm:py-16">
-            <h2 className="mb-10 text-xl font-bold">Skills</h2>
+            <h2 className="mb-10 text-2xl font-bold">Skills</h2>
 
             <ol className="flex flex-wrap justify-center gap-5">
                 {skills.map((item, index) => (
@@ -14,9 +14,9 @@ export function Skills() {
                             width={1080}
                             height={1080}
                             alt="Skill Logo"
-                            className={`${item.name === "" ? "w-16 h-fit" : "w-7 h-7"}`}
+                            className={`${item.name === "" ? "w-16 h-fit" : "w-10 h-10"}`}
                         />
-                        <p className="text-xs font-semibold">
+                        <p className="text-sm font-semibold">
                             {item.name}
                         </p>
                     </li>

@@ -5,7 +5,7 @@ import { Dot } from "lucide-react";
 export function ExperienceTimeline() {
     return (
         <div className="w-full max-w-xl p-8 mx-auto sm:px-0 sm:py-16">
-            <h2 className="mb-10 text-xl font-bold">Experience</h2>
+            <h2 className="mb-10 text-2xl font-bold">Experience</h2>
 
             <ol className="ml-6 border-s border-s-foreground/40">
                 {experiences.map((item, index) => (
