@@ -7,7 +7,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { IconHandClick, IconHome, IconLayoutNavbarCollapse } from "@tabler/icons-react";
+import { IconHandClick } from "@tabler/icons-react";
 import {
     AnimatePresence,
     MotionValue,
