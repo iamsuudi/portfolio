@@ -17,10 +17,9 @@ export default function HeroSection() {
             <main className="overflow-hidden">
                 <section className="relative">
                     <div className="relative py-24 lg:py-28">
-                        <div className="px-6 mx-auto max-w-7xl md:px-12">
+                        <div className="max-w-2xl px-6 mx-auto md:px-12">
                             <div className="text-center sm:mx-auto sm:w-10/12 lg:mr-auto lg:mt-0 lg:w-4/5">
-                                <Link
-                                    href=""
+                                <p
                                     className="rounded-(--radius) mx-auto flex w-fit items-center gap-2 border p-1 pr-3"
                                 >
                                     <span className="bg-muted rounded-[calc(var(--radius)-0.25rem)] px-2 py-1 text-xs">
@@ -32,7 +31,7 @@ export default function HeroSection() {
                                     <span className="bg-(--color-border) block h-4 w-px"></span>
 
                                     <ShieldCheck className="size-4" />
-                                </Link>
+                                </p>
 
                                 <h1 className="mt-8 text-4xl font-semibold xl:[line-height:1.125]">
                                     Hi, I am suudi <br /> A Full Stack
@@ -45,7 +44,7 @@ export default function HeroSection() {
 
                                 <div className="mt-8">
                                     <Button size="lg" asChild>
-                                        <Link href="#">
+                                        <Link href="#call-to-action">
                                             <Rocket className="relative size-4" />
                                             <span className="text-nowrap">
                                                 Let's Start Building
@@ -65,9 +64,10 @@ export default function HeroSection() {
                                     loop
                                     autoplay={{ delay: 2500 }}
                                     modules={[Autoplay, EffectCoverflow]}
+                                    className="flex items-center justify-end"
                                 >
                                     <SwiperSlide className="">
-                                        <div className="bg-background rounded-(--radius) h-44 max-w-lg border p-9">
+                                        <div className="bg-background rounded-(--radius) h-44 max-w-lg mx-auto border p-9">
                                             <div className="flex items-center justify-center gap-5">
                                                 <img
                                                     src="/postgres.png"
@@ -89,7 +89,7 @@ export default function HeroSection() {
                                     </SwiperSlide>
 
                                     <SwiperSlide className="">
-                                        <div className="bg-background rounded-(--radius) h-44 max-w-lg border p-9">
+                                        <div className="bg-background rounded-(--radius) h-44 max-w-lg mx-auto border p-9">
                                             <div className="flex items-center justify-center gap-5">
                                                 <img
                                                     src="/nextjs.png"
@@ -107,7 +107,7 @@ export default function HeroSection() {
                                     </SwiperSlide>
 
                                     <SwiperSlide className="">
-                                        <div className="bg-background rounded-(--radius) h-44 max-w-lg border p-9">
+                                        <div className="bg-background rounded-(--radius) h-44 max-w-lg mx-auto border p-9">
                                             <div className="flex items-center justify-center gap-5">
                                                 <img
                                                     src="/expo.png"
@@ -125,7 +125,7 @@ export default function HeroSection() {
                                     </SwiperSlide>
 
                                     <SwiperSlide className="">
-                                        <div className="bg-background rounded-(--radius) h-44 max-w-lg border p-9">
+                                        <div className="bg-background rounded-(--radius) h-44 max-w-lg mx-auto border p-9">
                                             <div className="flex items-center justify-center gap-5">
                                                 <img
                                                     src="/docker.png"

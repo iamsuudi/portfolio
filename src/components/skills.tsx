@@ -6,7 +6,7 @@ export function Skills() {
         <div className="w-full max-w-xl p-8 mx-auto sm:px-0 sm:py-16">
             <h2 className="mb-10 text-xl font-bold">Skills</h2>
 
-            <ol className="flex flex-wrap gap-5">
+            <ol className="flex flex-wrap justify-center gap-5">
                 {skills.map((item, index) => (
                     <li key={index} className="flex items-center gap-1">
                         <Image

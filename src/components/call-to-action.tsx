@@ -9,7 +9,7 @@ export default function CallToAction() {
     const [copied, setCopied] = useState(false);
 
     return (
-        <section className="w-full max-w-xl p-8 mx-auto sm:px-0 sm:py-16">
+        <section id="call-to-action" className="w-full max-w-xl p-8 mx-auto sm:px-0 sm:py-16">
             <div className="max-w-5xl px-6 mx-auto">
                 <div className="text-center">
                     <h2 className="text-4xl font-semibold text-balance lg:text-5xl">
