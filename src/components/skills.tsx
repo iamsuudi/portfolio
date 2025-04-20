@@ -14,7 +14,7 @@ export function Skills() {
                             width={1080}
                             height={1080}
                             alt="Skill Logo"
-                            className={`w-${item.size} h-fit`}
+                            className={item.className}
                         />
                         <p className="text-sm font-semibold">
                             {item.name}
@@ -28,52 +28,50 @@ export function Skills() {
 
 const skills = [
     {
-        size: 10,
+        className: "w-10 h-fit",
         icon: "/archlinux.png",
         name: "Linux",
     },
     {
-        size: 20,
+        className: "w-20 h-fit",
         icon: "/go.png",
     },
     {
-        size: 10,
+        className: "w-10 h-fit",
         icon: "/kotlin.png",
         name: "Kotlin",
     },
     {
-        size: 10,
+        className: "w-10 h-fit",
         icon: "/typescript.png",
         name: "Typescript",
     },
     {
-        size: 10,
+        className: "w-10 h-fit",
         icon: "/nestjs.png",
         name: "Nest.Js",
     },
     {
-        size: 10,
+        className: "w-10 h-fit",
         icon: "/postgres.png",
         name: "PostgresSQL",
     },
     {
-        size: 10,
+        className: "w-10 scale-150 h-fit mx-3",
         icon: "/docker.png",
         name: "Docker",
     },
     {
-        size: 10,
+        className: "w-10 h-fit",
         icon: "/tailwindcss.png",
         name: "Tailwindcss",
     },
     {
-        size: 16,
+        className: "w-16 h-fit",
         icon: "/nextjs.png",
-        name: "",
     },
     {
-        size: 16,
+        className: "w-16 h-fit",
         icon: "/expo.png",
-        name: "",
     },
 ];

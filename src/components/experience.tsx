@@ -16,13 +16,13 @@ export function ExperienceTimeline() {
                                 width={1080}
                                 height={1080}
                                 alt="Company Logo"
-                                className="w-8 h-8 rounded-full"
+                                className="w-9 h-9 rounded-full"
                             />
                         </span>
 
                         <div className="flex items-center justify-between">
                             <h3 className="mb-1 font-bold">{item.company}</h3>
-                            <div className="flex items-center text-xs font-semibold text-muted-foreground">
+                            <div className="flex items-center gap-2 text-xs font-semibold text-muted-foreground">
                                 <p>{item.time.start}</p>
                                 <span className="mb-1 text-sm font-black scale-125">
                                     &#xa0;&#xa0;&#x279B;&#xa0;&#xa0;
