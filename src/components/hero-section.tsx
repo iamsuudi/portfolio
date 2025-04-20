@@ -70,16 +70,16 @@ export default function HeroSection() {
                                         <div className="bg-background rounded-(--radius) h-44 max-w-lg mx-auto border p-9">
                                             <div className="flex items-center justify-center gap-5">
                                                 <img
-                                                    src="/postgres.png"
-                                                    className="w-20 h-fit"
+                                                    src="/go.png"
+                                                    className="w-20 scale-200 h-fit mr-5"
                                                 />
                                                 <img
-                                                    src="/express.png"
-                                                    className="w-20 scale-200 h-fit"
+                                                    src="/postgres.png"
+                                                    className="w-20 scale-90 h-fit"
                                                 />
                                                 <img
                                                     src="/nestjs.png"
-                                                    className="w-20 h-fit"
+                                                    className="w-20 scale-90 h-fit"
                                                 />
                                             </div>
                                             <p className="mt-3 text-lg font-medium text-center">
@@ -93,7 +93,7 @@ export default function HeroSection() {
                                             <div className="flex items-center justify-center gap-5">
                                                 <img
                                                     src="/nextjs.png"
-                                                    className="w-28 h-fit"
+                                                    className="w-32 h-fit"
                                                 />
                                                 <img
                                                     src="/tailwindcss.png"
@@ -137,7 +137,7 @@ export default function HeroSection() {
                                                 />
                                                 <img
                                                     src="/bash.png"
-                                                    className="w-20 scale-125 h-fit"
+                                                    className="w-20 scale-150 h-fit ml-5"
                                                 />
                                             </div>
                                             <p className="mt-3 text-lg font-medium text-center">
