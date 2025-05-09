@@ -88,7 +88,7 @@ const FloatingDockMobile = ({
             <Button
                 size={"icon"}
                 onClick={() => setOpen(!open)}
-                className="flex items-center justify-center w-10 h-10 rounded-full animate-pulse"
+                className="flex items-center justify-center w-10 h-10 rounded-full animate-pulse focus:animate-none"
             >
                 <IconHandClick className="size-5" />
             </Button>

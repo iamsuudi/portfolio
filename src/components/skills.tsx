@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export function Skills() {
     return (
-        <div className="w-full max-w-xl p-8 mx-auto sm:px-0 sm:py-16">
-            <h2 className="mb-10 text-2xl font-bold">Skills</h2>
+        <div className="w-full max-w-xl p-8 mx-auto sm:py-16">
+            <h2 className="mb-10 text-2xl font-bold text-center">Skills</h2>
 
             <ol className="flex flex-wrap justify-center gap-5">
                 {skills.map((item, index) => (
@@ -28,7 +28,7 @@ export function Skills() {
 
 const skills = [
     {
-        className: "w-10 h-fit",
+        className: "w-8 h-fit",
         icon: "/archlinux.png",
         name: "Linux",
     },
@@ -37,32 +37,32 @@ const skills = [
         icon: "/go.png",
     },
     {
-        className: "w-10 h-fit",
+        className: "w-8 h-fit",
         icon: "/kotlin.png",
         name: "Kotlin",
     },
     {
-        className: "w-10 h-fit",
+        className: "w-8 h-fit",
         icon: "/typescript.png",
         name: "Typescript",
     },
     {
-        className: "w-10 h-fit",
+        className: "w-8 h-fit",
         icon: "/nestjs.png",
         name: "Nest.Js",
     },
     {
-        className: "w-10 h-fit",
+        className: "w-8 h-fit",
         icon: "/postgres.png",
         name: "PostgresSQL",
     },
     {
-        className: "w-10 scale-150 h-fit mx-3",
+        className: "w-8 scale-150 h-fit mx-3",
         icon: "/docker.png",
         name: "Docker",
     },
     {
-        className: "w-10 h-fit",
+        className: "w-8 h-fit",
         icon: "/tailwindcss.png",
         name: "Tailwindcss",
     },
