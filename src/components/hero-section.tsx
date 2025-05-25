@@ -72,7 +72,7 @@ export default function HeroSection() {
                                             />
                                             <img
                                                 src="/go.png"
-                                                className="w-20 scale-200 h-fit mx-5"
+                                                className="w-20 scale-200 h-fit ml-5 mr-6"
                                             />
                                             <img
                                                 src="/nestjs.png"
@@ -81,6 +81,28 @@ export default function HeroSection() {
                                         </div>
                                         <p className="mt-3 text-lg font-medium text-center">
                                             Backend Development
+                                        </p>
+                                    </div>
+                                </SwiperSlide>
+
+                                <SwiperSlide className="">
+                                    <div className="bg-background rounded-(--radius) h-44 max-w-lg mx-auto border p-9">
+                                        <div className="flex items-center justify-center gap-5">
+                                            <img
+                                                src="/docker.png"
+                                                className="w-20 scale-125 h-fit"
+                                            />
+                                            <img
+                                                src="/kubernetes.png"
+                                                className="w-20 h-fit"
+                                            />
+                                            <img
+                                                src="/bash.png"
+                                                className="w-20 scale-150 h-fit ml-5"
+                                            />
+                                        </div>
+                                        <p className="mt-3 text-lg font-medium text-center">
+                                            Linux & DevOps
                                         </p>
                                     </div>
                                 </SwiperSlide>
@@ -117,28 +139,6 @@ export default function HeroSection() {
                                         </div>
                                         <p className="mt-3 text-lg font-medium text-center">
                                             Mobile App Development
-                                        </p>
-                                    </div>
-                                </SwiperSlide>
-
-                                <SwiperSlide className="">
-                                    <div className="bg-background rounded-(--radius) h-44 max-w-lg mx-auto border p-9">
-                                        <div className="flex items-center justify-center gap-5">
-                                            <img
-                                                src="/docker.png"
-                                                className="w-20 scale-125 h-fit"
-                                            />
-                                            <img
-                                                src="/archlinux.png"
-                                                className="w-20 h-fit"
-                                            />
-                                            <img
-                                                src="/bash.png"
-                                                className="w-20 scale-150 h-fit ml-5"
-                                            />
-                                        </div>
-                                        <p className="mt-3 text-lg font-medium text-center">
-                                            Linux & DevOps
                                         </p>
                                     </div>
                                 </SwiperSlide>

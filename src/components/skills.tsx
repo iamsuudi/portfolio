@@ -33,6 +33,16 @@ const skills = [
         name: "Linux",
     },
     {
+        className: "w-8 scale-150 h-fit mx-3",
+        icon: "/docker.png",
+        name: "Docker",
+    },
+    {
+        className: "w-8 h-fit mx-1",
+        icon: "/kubernetes.png",
+        name: "Kubernetes",
+    },
+    {
         className: "w-20 h-fit",
         icon: "/go.png",
     },
@@ -55,11 +65,6 @@ const skills = [
         className: "w-8 h-fit",
         icon: "/postgres.png",
         name: "PostgresSQL",
-    },
-    {
-        className: "w-8 scale-150 h-fit mx-3",
-        icon: "/docker.png",
-        name: "Docker",
     },
     {
         className: "w-8 h-fit",
