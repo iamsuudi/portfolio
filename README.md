@@ -21,6 +21,6 @@ on:
 * Copy `public` and `.next/static` into `.next/standalone`
 * Trigger deployment using Render deploy hook
 
-> 💡 Make sure to set your `RENDER_SECRETS` in GitHub repository secrets to enable the deployment trigger.
+> `RENDER_SECRETS` is set in GitHub repository secrets to enable the manual deployment trigger with hook.
 
----
+Deployment link: [https://portfolio-rluh.onrender.com](https://portfolio-rluh.onrender.com)
