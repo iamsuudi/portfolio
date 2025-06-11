@@ -1,9 +1,3 @@
-## ☁️ Deployment
-
-### 🔄 Automatic Deployment
-
-* Every push to the `main` branch triggers **automatic deployment on Vercel**.
-
 ### 🛠 Manual Deployment to Render
 
 A manual deployment is configured using GitHub Actions. See `.github/workflows/main.yaml`.
