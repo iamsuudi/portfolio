@@ -6,10 +6,33 @@ A manual deployment is configured using GitHub Actions. See `.github/workflows/m
 
 ```yaml
 name: Render Deployment pipeline
+
 on:
   push:
     branches:
       - main
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install pnpm
+        run: npm install -g pnpm
+      - name: Install dependencies
+        run: pnpm install
+      - name: Lint
+        run: pnpm lint
+      - name: Build
+        run: pnpm build
+      - name: Copy standalone
+        run: cp -r public .next/standalone/ && cp -r .next/static .next/standalone/.next/
+      - name: Trigger Deployment
+        run: curl https://api.render.com/deploy/${{ secrets.RENDER_SECRETS }}
+
 ```
 
 #### Steps:
